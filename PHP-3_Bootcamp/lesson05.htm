@@ -1,0 +1,43 @@
+<!-- Ajaxを使って簡単な掲示板の作成 -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>簡易掲示板</h1>
+    <p>Ajaxを使って簡単な掲示板の作成</p>
+    <div id="">
+        名前：<input type="text" name="" id="userName"><br>
+        内容：<textarea name="userContents" id="" cols="30" rows="10"></textarea>
+        <button type="button" id="submit">送信</button>
+    </div>
+    <h2>投稿一覧</h2>
+    <div id="postLsit"></div>
+    <script>
+        /*  一覧データの取得
+            lesson05.php から POST通信で JSONデータで一覧データを取得
+        */
+       async function getPostList(){
+       }
+        /*  新規投稿
+            lesson05.php から POST通信で JSONデータ登録
+        */
+        //ボタンを指定
+        const submitBtn = document.getElementById('submit');
+        //クリックイベントで
+        submitBtn.addEventListener('click',function(){
+            //名前を取得
+            //内容を取得
+            //
+            try{
+                //lesson03.phpにJSONで送信
+            }catch(e){
+            }finally{
+            }
+        })
+    </script>
+</body>
+</html>
