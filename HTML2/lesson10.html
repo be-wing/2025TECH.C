@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>関数演習（引数・戻り値の組み合わせ）</title>
+</head>
+<body>
+    <h1>関数</h1>
+    <p>戻り値あり、引数ありの応用</p>
+    <p>足し算の結果を出力</p>
+    <div>
+        <input id="inp01" type="number">
+        +
+        <input id="inp02" type="number">
+        <button id="button">実行</button>
+    </div>
+    <div id="resultView"></div>
+
+    <script>
+        const button = document.getElementById('button');
+        const resultView = document.getElementById('resultView');
+
+        // 1. 指定したIDから数値を取得する関数
+        function getEl(idName) {
+            // 【問題】引数で受け取った idName を使って要素を取得し、
+            // その値を「数値（Number）」として返してください
+            const val = document.getElementById('').value;
+            return;
+        }
+
+        // 2. 2つの数値を足し算して結果を返す関数
+        function mathAdd(num1, num2) {
+            // 【問題】2つの引数を足した結果を返してください
+            return ;
+        }
+
+        // 3. 実行処理
+        button.addEventListener('click', function() {
+            // 【問題】getEl 関数を利用して、それぞれの入力値を取得してください
+            let n1 = getEl('inp01');
+            let n2 = 0; //getEl(________);
+
+            // 【問題】mathAdd 関数を利用して計算し、結果を表示してください
+            const result = 0;  //mathAdd();
+            resultView.innerHTML = result;
+        });
+    </script>
+</body>
+</html>

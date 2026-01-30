@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>フォームの操作</h1>
+    <p>for分</p>
+    <div>
+        <button id="button">実行</button>
+    </div>
+    <p>5～15をfor分を使って表示</p>
+    <div id="view01"></div>
+
+    <!-- javaScriptは最後に読み込む -->
+    <script>
+        const button = document.getElementById('button');
+
+        button.addEventListener('click' , function(){
+            // 出力先の要素を取得
+            const view01 = document.getElementById('view01');
+            
+            // 表示をリセット（ボタンを連打した時に重ならないようにする）
+            view01.textContent = '';
+
+            // 【問題】5～15をfor文を使って表示
+            // ヒント1：初期値（let i = ...）を「5」から始めます
+            // ヒント2：条件式を「15以下」または「16未満」にします
+
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>関数演習（戻り値あり）</title>
+</head>
+<body>
+    <h1>関数</h1>
+    <p>戻り値あり、引数なしの基本形</p>
+    <div>
+        <button id="button">実行</button>
+    </div>
+    <div id="resultView"></div>
+
+    <script>
+        const button = document.getElementById('button');
+        const resultView = document.getElementById('resultView');
+
+        // 1. 関数の宣言
+        function randomNumber() {
+            // 1-10 までのランダムな整数を生成
+            const num = Math.floor(Math.random() * 10) + 1;
+            
+            // 【問題】生成した変数 num を「戻り値」として返してください
+            // ヒント: キーワードは「r」から始まります
+        }
+
+        // 2. 関数の実行
+        button.addEventListener('click' , function(){
+            // 【問題】関数 randomNumber を実行し、戻ってきた値を変数 res に代入してください
+            const res = 0;
+
+            // 結果を表示
+            resultView.innerHTML = res;
+        })
+    </script>
+</body>
+</html>

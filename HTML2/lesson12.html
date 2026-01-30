@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript応用問題：合計金額計算</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
+        .mondai-box { background: #f4f4f4; padding: 15px; border-left: 5px solid #333; margin-bottom: 20px; }
+        .result-area { margin-top: 20px; padding: 10px; border: 1px dashed #999; width: fit-content; }
+    </style>
+</head>
+<body>
+
+    <h1>応用問題：合計金額の算出</h1>
+    
+    <div class="mondai-box">
+        <p><strong>【ミッション】</strong></p>
+        <p>
+            1. <code>calculateTotal</code> 関数を完成させ、商品の合計金額を計算できるようにしてください。<br>
+            2. ボタンをクリックしたときに、関数を呼び出して結果を画面に表示してください。
+        </p>
+    </div>
+
+    <button id="calcBtn">合計金額を計算する</button>
+    
+    <div class="result-area">
+        表示エリア：<span id="totalView">---</span>
+    </div>
+
+    <script>
+        // 商品データ
+        const products = [
+            { name: 'ペン', price: 100 },
+            { name: 'ノート', price: 200 },
+            { name: '消しゴム', price: 50 }
+        ];
+
+        /**
+         * 【問題1】配列を受け取り、priceの合計を「戻り値」として返す関数
+         * @param {Array} dataArray - 商品オブジェクトの配列
+         * @returns {Number} - 合計金額
+         */
+        function calculateTotal(dataArray) {
+            let total = 0;
+            // ここに for文を記述してください
+            // ヒント：dataArray[i].price を total に足していきます
+            for (let i = 0; i < dataArray.length; i++) {
+                // total = total + ...
+            }
+            return total;
+        }
+
+        // ボタンクリック時の処理
+        document.getElementById('calcBtn').addEventListener('click', function() {
+            // 【問題2】作成した関数を呼び出し、変数 result に代入してください
+            const result = 0; // ここを修正
+
+            // 画面への表示処理
+            document.getElementById('totalView').textContent = '合計：' + result + '円';
+        });
+    </script>
+</body>
+</html>

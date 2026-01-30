@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在庫管理システム</title>
+</head>
+<body>
+    <h1>応用問題</h1>
+    <p>入力された「注文数」が、現在の「在庫数」より多いか少ないかを判定するプログラムを完成させてください。</p>
+    <p>現在の在庫：<span id="stockView">10</span>個</p>
+    <input type="number" id="orderInput" placeholder="注文数を入力">
+    <button id="checkBtn">在庫チェック</button>
+    <p id="msg"></p>
+
+    <script>
+        const checkBtn = document.getElementById('checkBtn');
+        const stockView = document.getElementById('stockView');
+        const msg = document.getElementById('msg');
+
+        // 【問題1】フォームのデータを取得する関数
+        // 戻り値：入力された数値（Number型）
+        function getOrderInput(){
+
+        }
+
+        // 【問題2】在庫をチェックして結果のメッセージを返す関数
+        // 引数：order(注文数), stock(在庫数)
+        // 戻り値：判定結果の文字列
+        function stockCheck(order, stock){ 
+            // ヒント: order が stock 以下のときと、多いときで戻り値を変えます
+            
+            //注文を承りました
+            //在庫が足りません
+        }
+
+        checkBtn.addEventListener('click', function() {
+            const stock = 10; // 在庫数
+            
+            // 【問題3】関数 getOrderInput を使って注文数を取得してください
+            const order = getOrderInput();
+
+            // 【問題4】関数 stockCheck を使ってメッセージを取得してください
+            const resultMsg = stockCheck(order, stock);
+
+            // 結果を表示
+            msg.textContent = resultMsg;
+
+            // 【発展】メッセージの内容によって色を変えてみよう
+                //msg.style.color = 'blue';
+                //msg.style.color = 'red';
+
+        });
+    </script>
+</body>
+</html>

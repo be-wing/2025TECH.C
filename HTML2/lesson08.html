@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>関数演習（引数あり）</title>
+</head>
+<body>
+    <h1>関数</h1>
+    <p>戻り値なし、引数ありの基本形</p>
+    <div>
+        <button id="button">実行</button>
+    </div>
+    <div id="resultView"></div>
+
+    <script>
+        const button = document.getElementById('button');
+        const resultView = document.getElementById('resultView');
+
+        // 1. 関数の宣言
+        // name は「受け取り口（引数）」の名前です
+        function sayHello() {
+            // 【問題】引数 name を使って「〇〇さん こんにちは！」と表示してください
+            // ヒント: 文字列と変数を + でつなぎます
+            resultView.innerHTML =  'さん こんにちは！';
+        }
+
+        // 2. 関数の実行
+        button.addEventListener('click' , function(){
+            // 【問題】関数 sayHello を「田中」というデータ（引数）を渡して実行してください
+            // ヒント: () の中に渡したい文字を入れます
+            
+        })
+    </script>
+</body>
+</html>
